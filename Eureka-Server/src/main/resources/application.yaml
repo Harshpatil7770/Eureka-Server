@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Eureka-Server
+    
+  profiles:
+    active:
+    - dev01
+    
+server:
+  port: 8761
+  
+logging:
+  file:
+    path: C:/App/CBNK/logs/eureka_server/
+    
+    name: C:/App/CBNK/logs/eureka_server/eureka_server.logs
+    
+eureka:
+  client:
+    register-with-eureka: false
+    
+    fetch-registry: false
